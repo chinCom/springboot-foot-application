@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Form Register</title>
+    <link rel="stylesheet" href="/registerForm/assets/css/Pretty-Registration-Form-.css">
+    <link rel="stylesheet" href="/registerForm/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="#">
+
+</head>
+
+<body>
+<div class="container">
+    <nav class="navbar navbar-light navbar-expand-md py-3">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#">
+            <div><img src="/registerForm/assets/img/615px-Food_Network_New_Logo%202.png"></div>
+            <a href="/home">
+                <span style="margin-left: 10px;color: #DC780B;font-weight: bold;">Home</span>
+            </a>
+        </a>
+            <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span
+                    class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#" style="color: #150C01;">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" style="color: #150C01;">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" style="color: #150C01;">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" style="color: #150C01;">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="row register-form">
+        <div class="col-md-8 offset-md-2">
+            <form class="custom-form" method="post" action="/home/successRegister">
+                <h1>Register Form</h1>
+                <div class="row form-group">
+                    <div class="col-sm-4 label-column">
+                        <label class="col-form-label" for="name-input-field">
+                            Name
+                        </label>
+                    </div>
+                    <div class="col-sm-6 input-column">
+                        <input class="form-control" type="text" name="name">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-sm-4 label-column">
+                        <label class="col-form-label" for="email-input-field">
+                            Email
+                        </label>
+                    </div>
+                    <div class="col-sm-6 input-column">
+                        <input class="form-control" type="email" name="email">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-sm-4 label-column"><label class="col-form-label" for="pawssword-input-field">Password </label>
+                    </div>
+                    <div class="col-sm-6 input-column">
+                        <input class="form-control" type="password" name="password">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-sm-4 label-column">
+                        <label class="col-form-label" for="repeat-pawssword-input-field">Repeat
+                            Password </label>
+                    </div>
+                    <div class="col-sm-6 input-column">
+                        <input class="form-control" type="password" name="repeatPassword">
+                    </div>
+                </div>
+                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-2"><label
+                        class="form-check-label" for="formCheck-2">I've read and accept the terms and conditions</label>
+                </div>
+                <button class="btn btn-light submit-button" type="submit">Register Now</button>
+                <p>You already have account? <a href="/home/login">Login here</a></p>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="/registerForm/assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
