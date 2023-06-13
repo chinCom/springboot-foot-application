@@ -35,7 +35,7 @@ function searchForFood(e) {
                 <p style="font-size: 26px;font-weight: bold;font-style: italic;text-decoration: underline;color: var(--bs-red);">Sorry, we couldn&#39;t find any food with that name</p>
                 `
             }
-            
+
             /* after users input value,  */
             else {
                 displayImageCouter = 3;
@@ -116,8 +116,8 @@ function searchForFood(e) {
                     if (displayImageCouter >= data.meals.length) {
 
                         // learnMoreBtn.style.display = 'none';
-                        // displayImageCouter = 3;
-                        window.location.reload();
+                        displayImageCouter = 3;
+                        // window.location.reload();
                     }
                     renderTest.innerHTML = data.meals.slice(0, displayImageCouter).map(meal => `
                 <div class="col-xl-3"
